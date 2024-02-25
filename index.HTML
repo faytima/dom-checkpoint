@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ma Boutique en Ligne</title>
+    <link rel="stylesheet" href="styles.css"> <!-- External stylesheet for better organization -->
+
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+
+    <!-- Google Fonts for a nicer font -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+
+    <style>
+        /* Rest of your styles go here */
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem;
+        }
+
+        .social-icons {
+            display: flex;
+            gap: 1rem;
+        }
+
+        .search-bar {
+            margin-left: auto;
+            display: flex;
+            align-items: center;
+        }
+
+        .search-input {
+            padding: 0.5rem;
+            border: none;
+            border-radius: 5px;
+        }
+
+        .contact-form {
+            max-width: 600px;
+            margin: 2rem auto;
+        }
+
+        .contact-form label,
+        .contact-form input,
+        .contact-form textarea {
+            display: block;
+            width: 100%;
+            margin-bottom: 1rem;
+        }
+
+        .contact-form button {
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            padding: 0.5rem 1rem;
+            cursor: pointer;
+            font-size: 1rem;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        .contact-form button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Ma Boutique en Ligne</h1>
+        <div class="social-icons">
+            <a href="#" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+        </div>
+        <div class="search-bar">
+            <input type="text" class="search-input" placeholder="Rechercher...">
+            <button><i class="fas fa-search"></i></button>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Accueil</a></li>
+                <li><a href="#">Produits</a></li>
+                <li><a href="#">Panier</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="produits">
+        <article>
+            <!-- Content for Product 1 -->
+        </article>
+
+        <article>
+            <!-- Content for Product 2 -->
+        </article>
+        <!-- Répétez la structure pour d'autres produits -->
+    </section>
+
+    <footer>
+        <div class="contact-form">
+            <h2>Contactez-nous</h2>
+            <form action="#" method="post">
+                <label for="name">Nom :</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email :</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message :</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <button type="submit">Envoyer</button>
+            </form>
+        </div>
+
+        <p>&copy; 2024 Ma Boutique en Ligne. Tous droits réservés.</p>
+    </footer>
+
+</body>
+</html>
